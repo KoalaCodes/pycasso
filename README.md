@@ -6,6 +6,8 @@
 
 Pycasso is an image and social media type application where users share images of thier different forms of artwork amongst each other. This application was built with Python Django framework.
 
+open with [Heroku](https://pycasso-629.herokuapp.com/)
+
 ## Technologies Used
 
 Full CRUD was used wtih Python Django. JavaScript is used for mainly the painting script. For Styling, a framework called [Tachyons.io](https://tachyons.io/) was used, which we felt fit the aesthetic of our design better than bootstrap or materialize.
