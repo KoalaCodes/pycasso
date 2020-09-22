@@ -6,13 +6,29 @@
 
 Pycasso is an image and social media type application where users share images of thier different forms of artwork amongst each other. This application was built with Python Django framework.
 
-open with [Heroku](https://pycasso-629.herokuapp.com/)
+~Open with [Heroku](https://pycasso-629.herokuapp.com/)~
+
+Home Page with Logo designed by Manny
+
+![](main_app/static/images/screenshot4.png)
+
+Gallery Page
+
+![](main_app/static/images/screenshot2.png)
+
+Profile Page with Parallax
+
+![](main_app/static/images/screenshot3.png)
+
+The Paint application, (Icebox feature: websockets)
+
+![](main_app/static/images/screenshot1.png)
 
 ## Technologies Used
 
 Full CRUD was used wtih Python Django. JavaScript is used for mainly the painting script. For Styling, a framework called [Tachyons.io](https://tachyons.io/) was used, which we felt fit the aesthetic of our design better than bootstrap or materialize.
 
-API from [Harvard](https://github.com/harvardartmuseums/api-docs) was used.
+jQuery was used for some scripts and DOM manipulation.
 
 ## Getting Started
 
@@ -42,7 +58,11 @@ Design: Layout of varying sizes for painting gallery, designed by Manny
 
 An attempt was made to use Django-Channels to allow the paint application be shared among users via websockets. However we were unsucessful 'pinging' the canvas data back to a user.
 
+An API pull from [Harvard](https://github.com/harvardartmuseums/api-docs) was attempted in order to show virtual museum data.
+
+
 ## Future Enhancements
 
 - To make the application more tangible, it would be better to add more user tie-ins, such as searching for other users, friends lists, etc.
+- Spacing between images and sizing need some debugging.
 - The Paint app has many possibilites such as tying your saved files directly into the Users profile model.
