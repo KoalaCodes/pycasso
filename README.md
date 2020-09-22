@@ -22,7 +22,7 @@ Images from the Gallery are randomly generated from all Users.
 
 The Paint tab brings you to the Paint page which allows you to draw or sketch different png files. Your png files get saved onto the 'files' page where you can view them.
 
-###### (if you click the subtitle 'Make art not war' it changes to quote by a famous artist.)
+###### (if you click the subtitle 'Virtual Art Gallery' it changes to quote by a famous artist.)
 
 ## Coding Process
 
