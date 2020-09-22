@@ -14,6 +14,7 @@ urlpatterns = [
     path('art/<int:pk>/update/', views.ArtUpdate.as_view(), name='art_update'),
     path('art/<int:pk>/delete/', views.ArtDelete.as_view(), name='art_delete'),
     path('gallery/', views.gallery_index, name='gallery_index'),
+    path('gallery_index_paginated/', views.gallery_index_paginated, name='gallery_index_paginated'),
     path('gallery/<int:art_id>/', views.gallery_detail, name='gallery_detail'),
     path('art/<int:art_id>/add_comment/', views.add_comment, name='add_comment'),
     path('gallery/<int:art_id>/comment/<int:pk>/update/', views.CommentUpdate.as_view(), name="comment_update"),
