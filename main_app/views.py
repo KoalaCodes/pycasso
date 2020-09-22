@@ -70,6 +70,8 @@ def codepen(request):
 
 class ArtList(LoginRequiredMixin, ListView):
     model = Art
+    def get_queryset(self):
+        return Art.objects.filter(user=self.request.user)
 
 
 class ArtCreate(LoginRequiredMixin, CreateView):
