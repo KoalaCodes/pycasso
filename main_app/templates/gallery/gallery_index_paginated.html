@@ -1,7 +1,9 @@
 {% extends 'base.html' %} 
 {% block content %} 
+
 {% for art in page_obj %} 
   {% if art.is_public %}
+
 <article class="cf">
   <div class="fl w-50 w-25-ns" id="div">
     <a
@@ -19,6 +21,7 @@
   {% endif %} 
   {% endfor %}
 </article>
+
 
   <div class="pagination">
     <span class="step-links">
