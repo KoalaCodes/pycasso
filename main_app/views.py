@@ -71,6 +71,8 @@ def codepen(request):
 
 class ArtList(LoginRequiredMixin, ListView):
     model = Art
+    def get_queryset(self):
+        return Art.objects.filter(user=self.request.user)
 
 
 class ArtCreate(LoginRequiredMixin, CreateView):
@@ -131,7 +133,7 @@ def gallery_index(request):
 
 def gallery_index_paginated(request):
     art = Art.objects.all()
-    paginator = Paginator(art, 5)
+    paginator = Paginator(art, 10)
     
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)

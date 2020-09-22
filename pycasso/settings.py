@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -79,6 +79,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'pycasso',
+        'USER': 'postgres',
+        'PASSWORD': 'starwars',
+        'PORT': 5432,
+        'HOST': 'localhost'
     }
 }
 
@@ -128,4 +132,4 @@ LOGOUT_REDIRECT_URL = '/'
 # ASGI_APPLICATION = 'pycasso.routing.application'
 
 
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
