@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import ListView, DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.decorators.csrf import csrf_exempt
+from django.core.paginator import Paginator
 
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
@@ -129,6 +130,14 @@ class ArtDelete(LoginRequiredMixin, DeleteView):
 def gallery_index(request):
     art = Art.objects.all()
     return render(request, 'gallery/gallery_index.html', {'art': art})
+
+def gallery_index_paginated(request):
+    art = Art.objects.all()
+    paginator = Paginator(art, 10)
+    
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    return render(request, 'gallery/gallery_index_paginated.html', {'page_obj': page_obj})
 
 
 def gallery_detail(request, art_id):
