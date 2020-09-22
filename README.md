@@ -6,7 +6,7 @@
 
 Pycasso is an image and social media type application where users share images of thier different forms of artwork amongst each other. This application was built with Python Django framework.
 
-~Open with [Heroku](https://pycasso-629.herokuapp.com/)~
+Open with [Heroku](https://pycasso-629.herokuapp.com/)
 
 Home Page with Logo designed by Manny
 
